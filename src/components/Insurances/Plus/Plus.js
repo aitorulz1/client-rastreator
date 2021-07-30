@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function Plus({ plusObj }) {
 
@@ -15,3 +16,6 @@ export default function Plus({ plusObj }) {
     );
 }
 
+Plus.propTypes = {
+    plusObj: PropTypes.object
+}

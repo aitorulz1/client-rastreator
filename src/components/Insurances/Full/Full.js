@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function Full({ fullObj }) {
 
@@ -13,4 +14,8 @@ export default function Full({ fullObj }) {
             </div>
         </div>
     );
+}
+
+Full.propTypes = {
+    fullObj: PropTypes.object
 }

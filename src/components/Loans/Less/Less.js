@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function Less({ less }) {
     return (
@@ -12,4 +13,8 @@ export default function Less({ less }) {
             </div>
         </div>
     )
+}
+
+Less.propTypes = {
+    less: PropTypes.object
 }

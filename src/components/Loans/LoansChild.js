@@ -1,6 +1,7 @@
 import React from 'react';
 import Less from './Less/Less';
 import More from './More/More';
+import PropTypes from 'prop-types';
 
 export default function LoansChild({ loan }) {
 
@@ -31,3 +32,6 @@ export default function LoansChild({ loan }) {
     );
 }
 
+LoansChild.propTypes = {
+    loan: PropTypes.object
+}

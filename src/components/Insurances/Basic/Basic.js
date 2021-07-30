@@ -1,7 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import '../../../scss/prices.sass';
-import '../../../scss/header.sass';
+
 
 export default function Basic({ basicObj }) {
 
@@ -19,4 +19,6 @@ export default function Basic({ basicObj }) {
     );
 }
 
-;
+Basic.propTypes = {
+    basicObj: PropTypes.object
+}

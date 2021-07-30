@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function More({ more }) {
     return (
@@ -12,4 +13,8 @@ export default function More({ more }) {
             </div>
         </div>
     )
+}
+
+More.propTypes = {
+    more: PropTypes.object
 }

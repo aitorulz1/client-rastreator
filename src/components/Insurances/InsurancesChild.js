@@ -3,6 +3,7 @@ import Basic from './Basic/Basic';
 import Plus from './Plus/Plus';
 import Full from './Full/Full';
 import '../../scss/prices.sass';
+import PropTypes from 'prop-types'; 
 
 export default function InsurancesChild({ insurance }) {
 
@@ -48,4 +49,8 @@ export default function InsurancesChild({ insurance }) {
       </div>
     </div>
   )
+}
+
+InsurancesChild.propTypes = {
+  insurance: PropTypes.object
 }
